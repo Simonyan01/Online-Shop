@@ -6,4 +6,11 @@ export default defineConfig({
   server: {
     port: 3000
   },
+  resolve: {
+    alias: {
+      '@components': '/src/components',
+      '@data': '/src/data',
+      '@utils': '/src/utils',
+    },
+  },
 })
