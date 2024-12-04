@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { products as data } from "@data/products.js";
 import ProductList from "@components/product-list";
 import { moveToCart } from "@utils/basket-utils";

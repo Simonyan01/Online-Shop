@@ -1,5 +1,5 @@
 import { clearProduct, quantityDown, quantityUp } from "@utils/basket-utils"
-import ProductItem from "@components/product-item"
+import BasketItem from "./basket-item"
 
 const Basket = ({ basket, setBasket }) => {
     return (
@@ -16,7 +16,7 @@ const Basket = ({ basket, setBasket }) => {
             <tbody>
                 {
                     basket.map((item) => (
-                        <ProductItem
+                        <BasketItem
                             item={item}
                             key={item.id}
                             onUp={(product) => quantityUp(basket, setBasket, product)}
